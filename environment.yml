@@ -1,0 +1,22 @@
+name: qcdata
+channels:
+  - openbabel
+  - conda-forge
+  - defaults
+dependencies:
+  # Core dependencies
+  - python==3.10.*
+  - pandas
+  - scipy
+  - tqdm
+  - matplotlib
+  - openbabel>=3
+  - rdkit>=2022
+
+  # Jupyter
+  - jupyterlab
+
+  # Dependencies for projects not yet on conda
+  - pip
+  - pip:
+    - foundry-ml>=0.5
